@@ -1,0 +1,6 @@
+RewriteEngine On
+#Backend Code Referred from "https://dev.to/durgeshsahani/react-crud-operations-using-php-api-and-mysql-13da"
+# Handle Front Controller...
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ user.php [L]

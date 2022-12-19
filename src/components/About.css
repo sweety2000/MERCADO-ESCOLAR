@@ -1,0 +1,218 @@
+/* Sharma, Shubham Bhagwati, 1001964524
+   Srinivasan,Pooja 1001952061
+   Thallu, Venkata Madhu Meghana, 1002031528 */
+
+
+   *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+a{
+    text-decoration: none;
+    color: #555;
+}
+p{
+    color: #555;
+}
+.container{
+    max-width: 1450px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.col{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.col-2 img{
+    max-width: 100%;
+    padding: 50px 0;
+}
+.col-2 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+.btn{
+    display: inline-block;
+    background: #ff523b;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+}
+.imgshop{
+    float: left;
+    padding-left: 20px;
+}
+.p-float{
+    margin: 15%;
+    padding-left: 40%;
+}
+
+.btn:hover{
+    background-color: #563434;
+}
+.header{
+    background: radial-gradient(#fff,#ffd6d6);
+}
+.topic{
+    padding-left: 10px;
+}
+.header row{
+    margin-top: 70px;
+}
+.categories{
+    margin: 70px 0;
+    padding-left: 25px;
+    padding-right: 10px;
+}
+.col-3{
+    flex-basis: 30%;
+    min-width: 100px;
+    margin-bottom:30px
+}
+.footer{
+    background: #000;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 0px 0 20px;
+}
+.footeer p{
+    color: #8a8a8a;
+}
+.footer h3{
+    color: #fff;
+    margin-bottom: 20px;
+}
+.footer-col-1,.footer-col-2, .footer-col-3, .footer-col-4{
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+.footer-col-1{
+    flex-basis: 30%;
+    text-align: center;
+} 
+.footer-col-2 img{
+    width: 180opx;
+    margin-bottom: 20px;
+}
+.footer-col-3, .footer-col-4{
+    flex-basis: 12%;
+    text-align: center;
+}
+ul{
+    list-style-type:none ;
+}
+.app-logo{
+    margin-top: 20px;
+
+}
+.app-log img{
+    width: 140px;
+}
+.menu-icon{
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+}
+
+
+
+
+
+
+
+
+/* ------------------------------------ */
+@media only screen and (max-width: 800px){
+    nav ul{
+        position: absolute;
+        top: 70px;
+        right: 0px;
+        flex-direction: column;
+        background-color: rgba(0,0,0,0);
+        width: 100%;
+    
+        background-color: #ff523b;;
+        display: block;
+        overflow: hidden;
+        transition: max-height 0 0.5s;
+
+    }
+    nav ul li{
+        display: block;
+        /* margin-right: 20px; */
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-align: center;
+        align-items: center;
+    
+        
+    
+    }
+    nav ul li a{
+        color:#fff;
+        text-align: center;
+        align-items: center;
+    }
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+    }
+    .row{
+        padding-top: 45%;
+       
+    }
+    .col-2{
+        margin-top: 30%;
+    }
+    .MenuItems{
+        max-height: 370px;
+    }
+    .imgshop{
+        float: none;
+        padding-left: 20px;
+       
+    }
+    .p-float{
+        margin: 0;
+        padding-left: 0;
+    }
+} 
+
+
+@media only screen and (max-width: 600px){
+    .row{
+        text-align: center;
+    }
+    .col-2,.col-3, .col-4{
+       flex-basis: 100%; 
+    }
+}
